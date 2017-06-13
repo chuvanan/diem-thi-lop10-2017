@@ -88,7 +88,7 @@ axis(1, col = "gray98", col.ticks = "gray30", at = seq(0, 50, 10), labels = seq(
 mtext("Ngoại ngữ", line = -3, adj = 0)
 
 ## tile
-mtext("Phổ điểm thi lớp 10 - khóa 2017", outer = TRUE, line = 2, font = 2)
+mtext("Phổ điểm thi lớp 10 - khóa 2017 (TP. Hồ Chí Minh)", outer = TRUE, line = 2, font = 2)
 
 dev.off()
 
