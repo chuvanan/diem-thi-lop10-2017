@@ -63,3 +63,17 @@ dt.nn <- merge(dt.nn,
 dt.nn$n_nn[is.na(dt.nn$n_nn)] <- 0
 
 ## compare distributions
+
+
+x.range <- c(0, 10)
+y.range <- range(dt.toan$n_toan, dt.van$n_van, dt.nn$n_nn)
+
+plot.new()
+plot.window(x.range, y.range)
+barplot(dt.van$n_van, col = adjustcolor("blue", alpha.f = 0.3), axes = FALSE, border = FALSE)
+barplot(dt.nn$n_nn, col = adjustcolor("forestgreen", alpha.f = 0.3), add = TRUE, axes = FALSE, border = FALSE)
+barplot(dt.toan$n_toan, col = adjustcolor("red4", alpha.f = 0.3), axes = FALSE, border = FALSE, add = TRUE)
+
+## lines(dt.toan$diem, dt.toan$n_toan, type = "h", col = "red4")
+## lines(dt.van$diem, dt.van$n_van, type = "h", col = "blue")
+## lines(dt.nn$diem, dt.nn$n_nn, type = "h", col = "forestgreen")
